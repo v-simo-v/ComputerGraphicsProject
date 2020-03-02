@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>City map generator</title>
+	<style type="text/css">
+	  body {
+		margin: 0;
+		background-color: gray;
+	  }
+	  canvas {
+		width: 70vw;
+		height: 70vh;
+		display: block;
+		background-color: white;
+	  }
+	</style>
+</head>
+
+
+<body>
+	<canvas id="c"></canvas>
+	<script type="text/javascript" src="perlin.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="utils2.js"></script>
+	<script type="text/javascript" src="quaternion.min.js"></script>
+	<script type="text/javascript" src="globals.js"></script>
+	<script type="text/javascript" src="input.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+	<script type="text/javascript" src="car.js"></script>
+	<script type="text/javascript" src="collisions.js"></script>
+	<script type="text/javascript" src="drawing.js"></script>
+	<table border="1">
+		<tr>
+			<td>Move the car:</td>
+			<td><B>WASD</B> keys</td>
+		</tr>
+		<tr>
+			<td>Move view (first person):</td>
+			<td>Mouse/directional keys</td>
+		</tr>
+		<tr>
+			<td>Move view (third person):</td>
+			<td>Directional keys</td>
+		</tr>
+		<tr>
+			<td>Zoom in/out (third person):</td>
+			<td><B>XZ</B> keys</td>
+		</tr>
+		<tr>
+			<td>Switch view:</td>
+			<td><B>V</B> key</td>
+		</tr>
+		<tr>
+			<td>Reset view:</td>
+			<td><B>R</B> key</td>
+		</tr>
+		<tr>
+			<td>Change car:</td>
+			<td><B>C</B> key</td>
+		</tr>
+		<tr>
+			<td>Toggle fullscreen:</td>
+			<td><B>F</B> key</td>
+		</tr>
+	</table>
+</body>
+
+</html>
